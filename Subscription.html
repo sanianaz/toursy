@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Subscription</title>
+</head>
+<body>
+    <section class= "subheader">
+        <nav>
+            <!--Logo----->
+            <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+           
+           <!--Nav links----->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li><a href="index.html"> HOME</a></li>
+                    <li><a href="destinations.html">DESTINATIONS</a></li>
+                    <li><a href="experiences.html">EXPERIENCES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="subscription.html">SUBSCRIPTION</a></li>
+                </ul>
+            </div>
+
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!--text section----->
+        <h1>SUBSCRIPTION</h1>
+           
+</section>
+
+<div class="sub-box">
+    <h3>Subscribe Today! </h3>
+    <form class="comment-form"  action="https://formspree.io/f/xnqlrgdw"  method="POST"id="form" >
+        <input type="text" id="email"  name="email" placeholder="Enter Email" required>   <br>
+    <button type="submit" class="btnone" >JOIN</button>
+    </form>
+</div>
+             
+
+<br><br> <br><br><br><br><br><br><br><br><br>
+
+<!--About Us----->
+        <div class="aboutus">
+            
+            <h1>ABOUT US</h1> <i class="fa fa-users fa-2x" ></i></span>
+            <p> we are Pakistanies, want to show the beauty of pakistan.</p>
+            <br><br>
+            
+            <div class="icons">
+
+               <a href=""><i class="fa fa-facebook fa-2x" ></i></a> 
+               <a href=""><i class="fa fa-twitter fa-2x" ></i></a>
+               <a href=""><i class="fa fa-instagram fa-2x" ></i></a>
+                <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+
+            </div>
+            </div>
+            
+        
+    <!--javascript for Toggle Menu----->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+    function showMenu()
+    {
+        
+        navLinks.style.right="0";
+        
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+        
+    }
+    </script>
+
+     
+        <script>
+        var form=document.getElementById('form')
+        form.addEventListener('submit', function(event)
+    {
+        event.preventDefault(); //prevent form from auto submitting
+        var email = document.getElementById('email').value;
+        console.log(email);
+    })
+    </script>
+
+
+</body>
+</html>
